@@ -1,0 +1,16 @@
+# Core dependencies
+faster-whisper>=1.0.0         # Whisper ASR on CPU (CTranslate2 backend)
+webrtcvad>=2.0.10             # Voice Activity Detection
+pyaudio>=0.2.14               # Audio capture
+numpy>=1.24.0                 # Numerical processing
+rich>=13.0.0                  # Terminal UI
+
+# Optional: for librosa-based mel spectrogram (higher quality)
+# librosa>=0.10.0
+
+# Optional: LLM intent classification layer
+# transformers>=4.40.0
+# torch>=2.0.0
+
+# Testing
+pytest>=7.0.0

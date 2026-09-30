@@ -1,0 +1,20 @@
+# NPU dependencies — Snapdragon X Elite / 8 Elite only
+# Requires AMD64 Python (not ARM64) on Windows on ARM
+# Install AFTER base requirements.txt
+
+# Qualcomm AI Hub SDK
+qai-hub>=0.20.0
+qai-hub-models>=0.20.0
+
+# ONNX Runtime with QNN Execution Provider
+# Windows: onnxruntime-qnn (replaces standard onnxruntime)
+onnxruntime-qnn>=1.18.0
+
+# PyTorch (needed for Silero VAD export)
+torch>=2.0.0
+
+# Setup instructions:
+#   1. pip install -r requirements.txt
+#   2. pip install -r requirements-npu.txt
+#   3. qai-hub configure --api_token YOUR_TOKEN
+#   4. python src/npu/qai_hub_setup.py
